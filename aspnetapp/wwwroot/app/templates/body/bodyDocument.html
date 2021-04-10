@@ -1,0 +1,41 @@
+<div class="card p-3 mt-0 mr-1 alert-lightborder rounded body-section">
+      <div class="p-3">
+            <p>
+                  This is web app project for C# ASP .net running on EasyDocker, a docker solution.
+            </p>
+            <p>
+                  <b>Local development environment setup and build</b>
+                  <ui>
+                        <li>docker build --pull -f dockerSetting/Dockerfile -t aspnetapp .</li>
+                        <li>docker stop app-easy-aspnet</li>
+                        <li>docker run --rm -d -p 8000:80  -v "$(pwd)/aspnetapp/wwwroot":/app/wwwroot --name app-easy-aspnet aspnetapp</li>
+                  </ui>
+            </p>
+            <p>
+                  <b>Cloud integration</b>
+                  <ui>
+                        <li>Submit the url <a href="https://github.com/easy4docker/easy_dotnet.git" target="_blank">https://github.com/easy4docker/easy_dotnet.git</a> on EasyDocker Admin.</li>
+                  </ui>
+            </p>
+            <p>
+                  <b>Codebase</b>
+                  <ui>
+                        <li>Back-end code (C#, Asp): aspnetapp/Pages</li>
+                        <li>Front-end code (Html, Javascript, CSS): aspnetapp/Pages</li>
+                  </ui>
+            </p>
+            <p>
+                  <b>API (localhost)</b>
+                  <ui>
+                        <li>API get angularCode: <a href="http://localhost:8000/api/angularCode" target="_blank">http://localhost:8000/api/angularCode</a></li>
+                        <li>API get content <a href="http://localhost:8000/api/getContentl" target="_blank">http://localhost:8000/api/getContentl</a></li>
+                  </ui>
+            </p>
+            <p>
+                  <b>Web (localhost)</b>
+                  <ui>
+                        <li>WWW: <a href="http://localhost:8000/aapp.html" target="_blank">http://localhost:8000/aapp.html</a></li>
+                  </ui>
+            </p>
+      </div>
+</div>

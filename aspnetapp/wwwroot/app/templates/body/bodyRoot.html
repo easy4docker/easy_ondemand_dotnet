@@ -1,0 +1,21 @@
+<div class="body-section m-0 p-1">
+      <div class="container-fluid m-0" >
+            <div class="row">
+                  <div class="col-2 p-0">
+                        <div class="menu-section m-2 shadow border rounded">
+
+                              <div class="m-1 p-2 pl-3 border rounded alert-secondary text-left cursor-pointer" ng-click="switchModule('api')">
+                                    <div>C# .Net Api</div>
+                              </div>
+                              <div class="m-1 p-2 pl-3 border rounded alert-secondary text-left cursor-pointer"  ng-click="switchModule('document')">
+                                    <div>Document</div>
+                              </div>
+                        </div>
+                  </div>
+                  <div class="col-10 p-2 text-left">
+                        <app-body-api ng-if="bodyModule === 'api'"></app-body-api>
+                        <app-body-document ng-if="bodyModule === 'document'"></app-body-document>
+                  </div>                        
+            </div>   
+      </div>
+</div>
